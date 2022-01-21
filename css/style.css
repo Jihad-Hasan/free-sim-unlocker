@@ -373,11 +373,15 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+iframe{
+    width: 650px;
+    height: 300px;
+}
 @media (max-width: 575.98px) {
     .social-share a {
         margin: 0 10px;
     }
-   
+  
     .brand-slider {
         margin-left: 20px;
         margin-right: 20px;
@@ -404,7 +408,8 @@ footer {
         padding-bottom: 10px;
     }
     iframe {
-        width: 415px !important;
+        width: 300px;
+        height: 150px;
     }
    
 }
