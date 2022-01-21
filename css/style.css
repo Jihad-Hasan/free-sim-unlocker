@@ -377,9 +377,7 @@ footer {
     .social-share a {
         margin: 0 10px;
     }
-    iframe {
-        width: 435px !important;
-    }
+   
     .brand-slider {
         margin-left: 20px;
         margin-right: 20px;
@@ -406,7 +404,7 @@ footer {
         padding-bottom: 10px;
     }
     iframe {
-        width: 435px !important;
+        width: 415px !important;
     }
    
 }
