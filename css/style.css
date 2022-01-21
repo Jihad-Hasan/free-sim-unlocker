@@ -378,11 +378,14 @@ footer {
         margin: 0 10px;
     }
     iframe {
-        width: 405px;
+        width: 435px !important;
     }
     .brand-slider {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .listing-carousel-button.listing-carousel-button-next {
+        right: 0px;
     }
 }
 
@@ -401,6 +404,9 @@ footer {
 
     .icon-images {
         padding-bottom: 10px;
+    }
+    iframe {
+        width: 435px !important;
     }
    
 }
