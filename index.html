@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/testimonial.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Free Sim Unlocker</title>
+  <style type="text/css">
+    .slick-slide {
+      margin: 20px;
+    }
+
+    .slick-slide img,
+    .img-title {
+      width: 115px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="position-fix">
+    <div class="container-fluid bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="information color-white">
+              <i class="fas fa-phone"></i>
+              (707)-414-0444
+              <span class="email mx-3">
+                <i class="fas fa-envelope-square"></i>
+                <span class="mail">support@freesimunlocker.com</span>
+              </span>
+              <span id="live-message" class="header-item-option pull-left">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                    <g fill="#88B04B" fill-rule="evenodd" transform="translate(1 1)">
+                      <circle cx="7.5" cy="7.5" r="7.5" stroke="#417505" opacity=".356"></circle>
+                      <circle cx="7.5" cy="7.5" r="4.5"></circle>
+                    </g>
+                  </svg>
+                  &nbsp;&nbsp;Support Available 24/7
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="icon-images text-md-end pt-1">
+              <img src="./img/mcafee.png" width="100" alt="" srcset="" />
+              <img src="./img/comodo_secure_100x85_transp.png" width="80" alt=""
+                srcset="" />
+              <img src="./img/03_Sales Helpline_Icon_T-01.svg" width="80" height="40" alt=""
+                srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light">
+      <!--navbar-->
+
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <img class="text-center" alt="Free Sim Unlocker Logo" src="./img/site-logo.png" width="200px" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 300px">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">UNLOCK PHONE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FREE UNLOCK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FREE IMEI UNLOCK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOW IT WORKS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TRACK ORDER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FORUMS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOGS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light">
+    <section class="hero-section pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="text-center" id="pickphone">
+              <img src="./img/unlock_any_phone.png" class="unlockany" alt="">
+              <form action="#" id="begin" method="get" name="begin" class="ng-pristine ng-valid">
+                <div class="pickphonebody">
+                  <select class="chzn-select-front drop-select-custom ng-pristine ng-valid ng-touched"
+                    ng-change="unlockAnySimFormOnChange()" ng-model="unlockAnySimForm.manufacturer"
+                    ng-options="manufacturer as manufacturer.title for manufacturer in manufacturers">
+                    <option label="Samsung" value="object:3" selected="selected">Samsung</option>
+                    <option label="Nokia" value="object:4">Nokia</option>
+                    <option label="Apple iPhone" value="object:5">Apple iPhone</option>
+                    <option label="Sony" value="object:6">Sony</option>
+                    <option label="Asus" value="object:7">Asus</option>
+                    <option label="Dell" value="object:8">Dell</option>
+                    <option label="Acer" value="object:9">Acer</option>
+                    <option label="Alcatel" value="object:10">Alcatel</option>
+                    <option label="Amazon Fire" value="object:11">Amazon Fire</option>
+                    <option label="Blackberry" value="object:12">Blackberry</option>
+                    <option label="HP" value="object:13">HP</option>
+                    <option label="HTC" value="object:14">HTC</option>
+                    <option label="Kyocera" value="object:15">Kyocera</option>
+                    <option label="LG" value="object:16">LG</option>
+                    <option label="Motorola" value="object:17">Motorola</option>
+                    <option label="Pantech" value="object:18">Pantech</option>
+                    <option label="ZTE" value="object:19">ZTE</option>
+                    <option label="Huawei" value="object:20">Huawei</option>
+                    <option label="BLU" value="object:21">BLU</option>
+                    <option label="All Android" value="object:22">All Android</option>
+                    <option label="Doro" value="object:23">Doro</option>
+                    <option label="Device Unlock App" value="object:24">Device Unlock App</option>
+                    <option label="SideKick" value="object:25">SideKick</option>
+                    <option label="Google Pixel" value="object:26">Google Pixel</option>
+                    <option label="Vtelca" value="object:27">Vtelca</option>
+                    <option label="Coolpad" value="object:28">Coolpad</option>
+                    <option label="Lenovo" value="object:29">Lenovo</option>
+                    <option label="OnePlus" value="object:30">OnePlus</option>
+                    <option label="Samsung Galaxy Tab" value="object:31">Samsung Galaxy Tab</option>
+                  </select>
+                  <select ng-change="unlockAnySimFormOnChange()" ng-model="unlockAnySimForm.country"
+                    class="chzn-select-front drop-select-custom ng-pristine ng-untouched ng-valid"
+                    ng-options="country as country.title for country in unlockAnySimForm.manufacturer.countries">
+                    <option label="United States" value="object:32" selected="selected">United States</option>
+                    <option label="United Kingdom" value="object:33">United Kingdom</option>
+                    <option label="Ireland" value="object:34">Ireland</option>
+                    <option label="Canada" value="object:35">Canada</option>
+                    <option label="Spain" value="object:36">Spain</option>
+                    <option label="France" value="object:37">France</option>
+                    <option label="Europe" value="object:38">Europe</option>
+                    <option label="Mexico" value="object:39">Mexico</option>
+                    <option label="Austria" value="object:40">Austria</option>
+                    <option label="All Country" value="object:41">All Country</option>
+                    <option label="Philippines" value="object:42">Philippines</option>
+                    <option label="South America" value="object:43">South America</option>
+                    <option label="Romania" value="object:44">Romania</option>
+                    <option label="Portugal" value="object:45">Portugal</option>
+                    <option label="Poland" value="object:46">Poland</option>
+                    <option label="Argentina" value="object:47">Argentina</option>
+                  </select>
+                  <select ng-change="unlockAnySimFormOnChange()" ng-model="unlockAnySimForm.network"
+                    class="chzn-select-front drop-select-custom ng-pristine ng-untouched ng-valid"
+                    ng-options="network as network.title for network in unlockAnySimForm.country.networks">
+                    <option label="AT&amp;T" value="object:48" selected="selected">AT&amp;T</option>
+                    <option label="Cricket Unlock Code" value="object:49">Cricket Unlock Code</option>
+                    <option label="MetroPCS Unlock Code" value="object:50">MetroPCS Unlock Code</option>
+                    <option label="T-Mobile Unlock Code" value="object:51">T-Mobile Unlock Code</option>
+                    <option label="All Networks" value="object:52">All Networks</option>
+                    <option label="Xfinity" value="object:53">Xfinity</option>
+                    <option label="AIO" value="object:54">AIO</option>
+                    <option label="Cellular" value="object:55">Cellular</option>
+                    <option label="Spectrum" value="object:56">Spectrum</option>
+                    <option label="T-Mobile Device App" value="object:57">T-Mobile Device App</option>
+                    <option label="MetroPCS Device App" value="object:58">MetroPCS Device App</option>
+                    <option label="Cricket Device APP" value="object:59">Cricket Device APP</option>
+                    <option label="Verizon" value="object:60">Verizon</option>
+                  </select>
+                  <select ng-change="unlockAnySimFormOnChange()" ng-model="unlockAnySimForm.model"
+                    class="chzn-select-front drop-select-custom ng-pristine ng-untouched ng-valid"
+                    ng-options="model as model.title for model in unlockAnySimForm.network.product.models">
+                    <option label="All Models" value="object:61" selected="selected">All Models</option>
+                    <option label="Galaxy ZFlip/Z-Flip 2(5G)/Fold 2" value="object:62">Galaxy ZFlip/Z-Flip 2(5G)/Fold 2
+                    </option>
+                    <option label="S21/S21+/S21 Ultra" value="object:63">S21/S21+/S21 Ultra</option>
+                    <option label="Note 20/Note 20 Ultra/Tab S7" value="object:64">Note 20/Note 20 Ultra/Tab S7</option>
+                    <option label="S20/S20+/S20+ Ultra" value="object:65">S20/S20+/S20+ Ultra</option>
+                    <option label="SM-F900F/SM-F900A/SM-F900H/SM-F900" value="object:66">
+                      SM-F900F/SM-F900A/SM-F900H/SM-F900</option>
+                    <option label="Note7/Note8/Note9/Note10/10+ 5G" value="object:67">Note7/Note8/Note9/Note10/10+ 5G
+                    </option>
+                    <option label="Galaxy Z Flip3/Z Fold 3 (5G)" value="object:68">Galaxy Z Flip3/Z Fold 3 (5G)</option>
+                    <option label="S20 5G/S20+ 5G/S20+ Ultra 5G/S20 FE" value="object:69">S20 5G/S20+ 5G/S20+ Ultra
+                      5G/S20 FE</option>
+                    <option label="S Series/2/3/4/5/6/7/S7Edge/8/9/10" value="object:70">S
+                      Series/2/3/4/5/6/7/S7Edge/8/9/10</option>
+                    <option label="S Series S9+/10+/10E/S10 5G/S10 Lite" value="object:71">S Series S9+/10+/10E/S10
+                      5G/S10 Lite</option>
+                    <option label="Samsung Galaxy Tab All Models" value="object:72">Samsung Galaxy Tab All Models
+                    </option>
+                  </select>
+                  <div class="costimg">
+                    <p style="margin-bottom:1px!important;text-align:center;" class="ng-binding">Cost : $23.99</p>
+                  </div>
+                  <div class="timeimg">
+                    <p style="margin-bottom:1px!important;text-align:center;" class="ng-binding">Time to Unlock : 2 - 5
+                      Days</p>
+                  </div>
+                </div>
+                <button type="button" class="buttonhide" ng-click="goModelDetail()"><img src="./img/unlock_now.png"
+                    class="unlockbutton" alt=""></button>
+              </form>
+            </div>
+
+          </div>
+          <div class="col-md-9">
+            <div id="info" class="text-center color-white">
+              <p id="numbers" style="font-size: 16px">
+                Over 2 million phones unlocked in the past 8 years
+              </p>
+              <h1 class="bigtext" style="
+                    color: #fff;
+                    font-family: 'Lato', sans-serif !important;
+                  ">
+                Sim Unlock Service
+              </h1>
+              <p id="facts">
+                MONEY BACK GUARANTEE
+              </p>
+            </div>
+            <div class="yt-video text-center">
+              <iframe
+                  src="https://player.vimeo.com/video/667792751?h=d0ba4a628e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                  style="width:650px;height: 300px;"
+                  title="Free SIM Unlock - Home Page.mp4"></iframe>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brand-slider mt-3">
+      <div class="container">
+        <span class="fs-3 underline-06">Top Brands</span>
+        <section class="regular slider">
+          <div>
+            <a href="https://www.freesimunlo">
+              <img src="./img/apple_2017.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Apple</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/samsung">
+              <img src="./img/card/samsung.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Samsung</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/lg">
+              <img src="./img/card/lg.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock LG</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/blackberry">
+              <img src="./img/card/blackberry.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Blackberry</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/motorola">
+              <img src="./img/card/motorola.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Motorola</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/nokia">
+              <img src="./img/card/nokia.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Nokia</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/huawei">
+              <img src="./img/card/huawei.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock Huawei</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/htc">
+              <img src="./img/card/htc.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock HTC</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/sony">
+              <img src="./img/card/sony.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock SONY</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/alcatel">
+              <img src="./img/card/alcatel.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock ALCATEL</p>
+          </div>
+          <div>
+            <a href="https://www.freesimunlocker.com/unlock/zte">
+              <img src="./img/card/zte.png" />
+            </a>
+            <p class="img-title text-center mt-2">Unlock ZTE</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card-section pb-4">
+      <div class="container">
+        <div class="row">
+          <h1 class="fw-bold color-blue text-center my-5">
+            REASONS TO CHOOSE SIM UNLOCKER
+          </h1>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <img src="./img/card/lock.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Over 2 million devices unlocked</h4>
+                <p class="card-text">
+                  We has been in the unlocking business for over 8 years. The
+                  mobile unlocking services we provide are of the highest
+                  quality. We have unlocked over 2 million phones
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <img src="./img/card/moneyback.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Money back guarantee</h4>
+                <p class="card-text">
+                  We work real hard to establish and maintain excellent
+                  customer support. However, in case we are unable to unlock
+                  your phone for the paid service, your money would be
+                  refunded back to you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <img src="./img/card/time.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Realistic delivery time</h4>
+                <p class="card-text">
+                  We promise an accurate turnaround time. This does not affect
+                  the efficiency of our service in any way. Positive
+                  testimonials we have received from our clients could attest
+                  to our greatness in the market.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <img src="./img/card/support.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Best customer assistance 24/7</h4>
+                <p class="card-text">
+                  Apart from our highly-trained staff in unlocking procedures,
+                  a friendly service awaits you to guide you through the
+                  unlocking process. We are also available 24/7.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <img src="./img/card/skill.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">No technical skills required</h4>
+                <p class="card-text">
+                  The instructions we have on our website for your unlocking
+                  are straightforward and easy to follow. You are only
+                  required to choose your phone details and you are good to
+                  go.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="article__content container container--pall">
+              <h2 class="text-center">.</h2>
+              <div class="container">
+                <div id="accordion" class="accordion-container">
+                  <h4 class="accordion-title">
+                    Benefits of Cellphone IMEI Unlocking using
+                    <a href="https://www.freesimunlocker.com"><b>Free SIM Unlocker</b></a>
+                  </h4>
+                  <div class="active active-content" style="display: none">
+                    <p class="p-2">
+                      The primary reason network providers SIM lock their
+                      mobile phones is that they can offer customers with
+                      discounted rates in lieu of a contract that restricts
+                      the use of the phone only to the mobile network provider
+                      that sold them. This practice allows the network
+                      provider to recover back the cost of the phone over the
+                      contract period. <br />
+                      Cellphone IMEI unlocking is the process of lifting this
+                      SIM lock feature. As a result, the use of the mobile
+                      device with any compatible SIM card from all throughout
+                      the world is now possible. However, the traditional
+                      processes of unlocking the SIM card are tedious and
+                      risky.
+                      <a href="https://www.freesimunlocker.com/unlock-free-sim"><b>Free SIM Unlocker</b></a>
+                      is the safest and quickest option in the unlocking of
+                      SIM restricted phones.
+                    </p>
+                  </div>
+                  <h4 class="accordion-title">
+                    Benefits of Cellphone IMEI Unlocking
+                  </h4>
+                  <div class="accordion-content" style="display: none">
+                    <p class="pt-2">
+                      With millions of successfully
+                      <a href="https://www.freesimunlocker.com/reviews"><b>
+                          unlocked cellphone IMEI and happy customers</b></a>, <b>Free SIM Unlocker</b> is the premier
+                      choice for
+                      unlocking network locked phones. We have listed in this
+                      article the benefits of unlocking the IMEI of your
+                      mobile phone:
+                    </p>
+
+                    <h4 class="marginoff">
+                      Hassle-free transition to another network service
+                      provider
+                    </h4>
+                    <p>
+                      When travelling abroad, it is vital to have an active
+                      mobile connection to connect with your family or company
+                      on the other side of the world. However, SIM locked
+                      phones makes this process troublesome and you must first
+                      activate roaming services (which is very expensive!) for
+                      the original network provided SIM card to work abroad.
+                      Unlocking your phone solve this problem and provides a
+                      seamless and hassle-free transition to another SIM card
+                      in your destination country.
+                    </p>
+
+                    <h4 class="marginoff">
+                      The most cost-effective way to use your phone anywhere
+                    </h4>
+                    <p>
+                      Jet-setters know, all too well, how big the incurred
+                      roaming charges can add up to since the network provider
+                      charges at international rates rather than local rates.
+                      Unlock Phone Online is the best and practical method for
+                      saving hundreds of bucks from expensive phone bills.
+                    </p>
+
+                    <h4 class="marginoff">
+                      No more hidden fees for your mobile phone
+                    </h4>
+                    <p>
+                      Network providers are known for confusing and annoying
+                      tactics to charge hidden phone costs especially for
+                      those they have a contract with. These usually come in
+                      misleading names such as 'mobile diamond membership
+                      plan' or 'fast bandwidth plan'. With SIM unlocking,
+                      these unwanted services are avoided and phone users can
+                      opt for more better suited mobile plans of their own
+                      volition.
+                    </p>
+
+                    <h4 class="marginoff">
+                      Upsell your unlocked mobile phone
+                    </h4>
+                    <p>
+                      Selling mobile phones that are
+                      <a href="https://www.freesimunlocker.com/unlock-free-sim">IMEI unlocked</a>
+                      provide more value compared to network locked phones.
+                      Potential buyers are keen on having unlocked phones than
+                      those with SIM usage restrictions. This allows an
+                      opportunity for the seller to increase the price of the
+                      phone since it can now switch freely to any mobile
+                      network providers.
+                    </p>
+
+                    <h4 class="marginoff">
+                      Most secured and guaranteed way for unlocking phones
+                    </h4>
+                    <p>
+                      Using traditional methods of unlocking phones comes with
+                      unsecured and unwanted drawbacks. These include using
+                      third party application software or physical
+                      modification of the mobile equipment. Both methods
+                      nullify the service warranty agreement with the network
+                      provider. &lt;b&gt;Free SIM Unlock&lt;/b&gt; is the most
+                      secure option that guarantees immediate result to SIM
+                      unlocking your mobile phone. This is made possible with
+                      the use of authentic unlock codes provided directly by
+                      the mobile phone manufacturers.
+                    </p>
+                  </div>
+                </div>
+                <div class="text-center mt-3">
+                  <a href="#" class="button">UNLOCK NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 bg-white">
+            <h2 class="text-center front-title mt-4">Our Statement</h2>
+            <p class="px-5">
+              At Freesimunlocker.com, we provide the simplest and cheapest
+              solution to unlock your devices or smartphone. With this, you
+              are not restricted to a particular network provider.Our fastest
+              delivery has rated us high among our contemporaries. We offer to
+              provide the best experience to our customers with a
+              user-friendly website interface. We can unlock iPhone, Samsung,
+              Motorola, LG, HTC, T-Mobile, Blackberry devices and lots more!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="download-sction section-padding">
+              <div class="section_header">
+                <h4>Download the app Now</h4>
+              </div>
+              <div class="app-rate col-md-12">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <span><small>(4.5)</small></span>
+              </div>
+              <div class="col-md-12">
+                <a class="download-btn" href="https://play.google.com/store/apps/details?id=sim.imei.unlock&amp;hl=en">
+                  <div class="icon-download">
+                    <i class="fab fa-android" aria-hidden="true"></i>
+                  </div>
+                  <div class="text-download">
+                    <span>Available on</span>
+                    <h6>Google play</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-12 see-review">
+                <h4>
+                  <a href="https://www.freesimunlocker.com/reviews">see all Reviews and Rattings</a>
+                </h4>
+              </div>
+              <div class="col-md-12 already-app">
+                <h4>Alredy have the app</h4>
+                <a href="https://play.google.com/store/apps/details?id=sim.imei.unlock&amp;hl=en" class="btn">Review it
+                  Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-testi">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <span class="section-separator"></span>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div class="testimonials-carousel-wrap">
+          <div class="listing-carousel-button listing-carousel-button-next">
+            <i class="fa fa-caret-right" style="color: #fff"></i>
+          </div>
+          <div class="listing-carousel-button listing-carousel-button-prev">
+            <i class="fa fa-caret-left" style="color: #fff"></i>
+          </div>
+          <div class="testimonials-carousel">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar"><img src="./img/21.jpg" /></div>
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        Absolutely brilliant and a really prompt service.
+                        Highly recommended
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Barbara McMahon</h3>
+                        <h4>Customer</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--second--->
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar"><img src="./img/3.jpg" /></div>
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>Waiting patiently let ya know later 📱</p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Doe Boe</h3>
+                        <h4>Director</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+                <!--third-->
+
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar"><img src="./img/4.jpg" /></div>
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Boe Doe</h3>
+                        <h4>Developer</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--fourth-->
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar"><img src="./img/6.jpg" /></div>
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting pe specimen book.
+                      </p>
+                      <a href="#" class="text-link"></a>
+                      <div class="testimonials-avatar">
+                        <h3>Doe John</h3>
+                        <h4>Designer</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+                <!--testi end-->
+              </div>
+            </div>
+          </div>
+
+          <div class="tc-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center paymentMethods">
+              <span>PAYMENT METHODS:
+                <img src="./img/phone-unlocking-payment-methods.png" alt="" srcset="" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer bg-black p-2">
+      <footer class="page-footer font-small pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 mt-md-0 mt-3">
+              <!-- Content -->
+              <h5 class="text-uppercase">Contact us anytime</h5>
+              <div class="textwidget">
+                <p class="marginsmall">
+                  7 days a weeks, 24 hours a day<br />
+                  <strong>support@freesimunlocker.com</strong>
+                </p>
+              </div>
+              <div class="textwidget">
+                <strong>Address :-</strong>
+                <p class="marginsmall">
+                  758, Suite 5, <br />Gateway Plaza<br />
+                  Abernathy Drive, Fairfield<br />
+                  CA, 94534
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3" />
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">POPULAR UNLOCKS</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Unlock iPhone</a>
+                </li>
+                <li>
+                  <a href="#!">Samsung Unlock Code</a>
+                </li>
+                <li>
+                  <a href="#!">Unlock HTC Phone</a>
+                </li>
+                <li>
+                  <a href="#!">Unlock LG Phone</a>
+                </li>
+                <li>
+                  <a href="#!">Free Unlock AT&T Phones</a>
+                </li>
+                <li>
+                  <a href="#!">T-Mobile Device Unlock App Service</a>
+                </li>
+                <li>
+                  <a href="#!">MetroPCS Device Unlock App Service</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">INFO</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">About US</a>
+                </li>
+                <li>
+                  <a href="#!">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#!">Frequently Asked Questions</a>
+                </li>
+                <li>
+                  <a href="#!">Unlock Instructions</a>
+                </li>
+                <li>
+                  <a href="#!">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+
+              <ul class="list-unstyled ms-5 mt-5 text-center">
+                <li>
+                  <a href="#"><img height="50" src="./img/card/comodo-secure-base.png" title="Comodo SSL Certificate"
+                      alt="Comodo SSL Certificate" width="100" /></a>
+                </li>
+                <li>
+                  <a href="#"><img border="0" alt="McAfee Secure" class="mfes-trustmark mfes-trustmark-hover"
+                      height="41" src="./img/102.gif" width="100" /></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img alt="Secured by Authorize .Net" src="./img/bdg_secured_by_pp_2line.png" width="100" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.freesimunlocker.com/unlock-site/ClickToCall/?call"><img
+                      alt="Helpline" height="80" src="./img/03_Sales Helpline_Icon_T-01.svg" title="Helpline"
+                      width="80" /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+          <!-- Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12 py-3">
+              <div class="social-share">
+                <a href="https://www.facebook.com/freesimunlocker" rel="�nofollow�"><i class="fab fa-facebook fa-2x"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/freesimunlocker/" rel="�nofollow�"><i class="fab fa-instagram fa-2x"
+                    aria-hidden="true"></i></a>
+                <a href="https://twitter.com/freesimunlocker" rel="�nofollow�"><i class="fab fa-2x fa-twitter"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.com/freesimunlocker/" rel="�nofollow�"><i
+                    class="fab fa-2x fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UC9nAYZM3-H2IENMPKlElw-w" rel="�nofollow�"><i
+                    class="fab fa-2x fa-youtube" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/114824025274045515528" rel="�nofollow�"><i
+                    class="fab fa-2x fa-google-plus" aria-hidden="true"></i></a>
+                <div class="clear"></div>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2017 Copyright
+          <a href="https://www.freesimunlocker.com/">freesimunlocker.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on("ready", function () {
+      $(".regular").slick({
+        infinite: true,
+        autoplay: true,
+        speed: 200,
+        dots: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              adaptiveHeight: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    });
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
